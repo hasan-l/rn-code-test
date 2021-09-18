@@ -33,7 +33,11 @@ const Home = () => {
       }}>
       <HomeTabs.Screen name="Info" component={Info} />
       <HomeTabs.Screen name="Market" component={Market} />
-      <HomeTabs.Screen name="Details" component={Details} />
+      <HomeTabs.Screen
+        name="Details"
+        component={Details}
+        options={{headerShown: 'true'}}
+      />
     </HomeTabs.Navigator>
   );
 };

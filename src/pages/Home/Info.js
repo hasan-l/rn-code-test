@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     //height: 44,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignContent: 'center',
     flexWrap: 'wrap',
   },
