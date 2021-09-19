@@ -1,24 +1,26 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-  Linking,
-  StyleSheet,
-  Image,
-  Button,
-} from 'react-native';
-import Product from '../../components/Product/index';
+import {SafeAreaView, Text, StyleSheet, Image, Button} from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const Details = ({route, navigation}) => {
-  const {product, final, isDiscount} = route.params;
-
   React.useLayoutEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
-        <Button onPress={() => navigation.goBack()} title="Back"></Button>
+        <MaterialIcons
+          name="arrow-back"
+          size={28}
+          color="black"
+          style={{marginLeft: 15}}
+          onPress={() => navigation.goBack()}
+        />
       ),
     });
   }, [navigation]);
+
+  if (!route.params?.product) {
+    return <Text style={styles.title}>No product has been selected!</Text>;
+  }
+  const {product = null, final, isDiscount} = route.params;
 
   return (
     <SafeAreaView style={styles.container}>

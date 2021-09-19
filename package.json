@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start:development": "NODE_ENV=development npx react-native start",
+    "start:production": "NODE_ENV=production npx react-native start"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.0.5",
@@ -15,6 +17,7 @@
     "@react-navigation/native-stack": "^6.1.0",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-dotenv": "^3.2.0",
     "react-native-reanimated": "^2.2.2",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.7.2",

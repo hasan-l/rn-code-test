@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-  Linking,
-  StyleSheet,
-  View,
-  FlatList,
-} from 'react-native';
-import Product from '../../components/Product/index';
+import {SafeAreaView, Text, StyleSheet, View, FlatList} from 'react-native';
 import data from '../../../data';
 
 const Info = () => {

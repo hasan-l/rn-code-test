@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, Text, Linking, StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import Product from '../../components/Product/index';
 
 const Market = () => (

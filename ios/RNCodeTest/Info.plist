@@ -70,5 +70,7 @@
   <string>Zocial.ttf</string>
   <string>Fontisto.ttf</string>
 </array>
+<key>SERVICE_KEY</key>
+	<string>$(SERVICE_KEY)</string>
 </dict>
 </plist>

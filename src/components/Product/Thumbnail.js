@@ -1,18 +1,13 @@
 import React, {useState} from 'react';
 import {
-  Dimensions,
   StyleSheet,
   View,
-  ScrollView,
-  StatusBar,
-  BackHandler,
-  Image,
   Text,
   ImageBackground,
   Animated,
   TouchableWithoutFeedback,
+  Platform,
 } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
 import {useEffect} from 'react';
@@ -36,13 +31,15 @@ const Thumbnail = ({product}) => {
     Animated.spring(animation, {
       toValue: 0,
       useNativeDriver: true,
-    }).start(
+      speed: 24,
+      //restDisplacementThreshold: 0.9999,
+    }).start(() => {
       navigation.navigate('Details', {
         product: product,
         final: final,
         isDiscount: isDiscount,
-      }),
-    );
+      });
+    });
   };
 
   useEffect(() => {
@@ -66,7 +63,8 @@ const Thumbnail = ({product}) => {
 
   return (
     <View style={styles.imgContainer} key={product.title}>
-      <Animated.View style={{transform: [{scale}]}}>
+      <Animated.View
+        style={{transform: [{scale}], margin: 20, marginBottom: 10}}>
         <TouchableWithoutFeedback
           onPressIn={onPressIn}
           onPressOut={() => onPressOut(product)}>
@@ -74,7 +72,7 @@ const Thumbnail = ({product}) => {
             source={{uri: product.image}}
             resizeMode="cover"
             style={styles.img}
-            imageStyle={{}}>
+            imageStyle={{borderRadius: 10}}>
             <View style={styles.infoBar}>
               <View>
                 <Text style={styles.title}>{product.title}</Text>
@@ -123,13 +121,15 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     padding: 10,
+    paddingTop: Platform.OS === 'ios' ? 10 : 5,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
   },
   container: {
     flex: 1,
   },
   imgContainer: {
-    borderRadius: 10,
-    overflow: 'hidden',
+    //overflow: 'hidden',
   },
   img: {
     height: undefined,
@@ -141,13 +141,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     fontSize: 14,
-    marginBottom: 2,
+    //marginBottom: 2,
   },
   price: {
     fontWeight: 'bold',
     color: 'white',
     fontSize: 14,
-    marginBottom: 2,
+    //marginBottom: 2,
   },
   text: {
     color: 'white',

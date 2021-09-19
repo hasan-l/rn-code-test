@@ -13,6 +13,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1D122DD121129933B549FAEA /* libPods-RNCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA28A5CCF428D9D6D0AE51 /* libPods-RNCodeTest.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		900EB55126F7CA6800F1C5DF /* ServiceKeyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55026F7CA6800F1C5DF /* ServiceKeyModule.m */; };
+		900EB55226F7CA6800F1C5DF /* ServiceKeyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55026F7CA6800F1C5DF /* ServiceKeyModule.m */; };
+		900EB55626F7D63200F1C5DF /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55526F7D63200F1C5DF /* ServiceKey.swift */; };
+		900EB55726F7D63200F1C5DF /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55526F7D63200F1C5DF /* ServiceKey.swift */; };
+		900EB55926F7D67500F1C5DF /* ServiceKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55826F7D67500F1C5DF /* ServiceKey.m */; };
+		900EB55A26F7D67500F1C5DF /* ServiceKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EB55826F7D67500F1C5DF /* ServiceKey.m */; };
 		DBB2A8A17BFCCA057667BFD4 /* libPods-RNCodeTest-RNCodeTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4F1907C6B68A85C91F13ED /* libPods-RNCodeTest-RNCodeTestTests.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNCodeTest/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8684212AA672178F410B8BB8 /* Pods-RNCodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTest.debug.xcconfig"; path = "Target Support Files/Pods-RNCodeTest/Pods-RNCodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8E17671C49F770B86DB7E287 /* Pods-RNCodeTest-RNCodeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTest-RNCodeTestTests.release.xcconfig"; path = "Target Support Files/Pods-RNCodeTest-RNCodeTestTests/Pods-RNCodeTest-RNCodeTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		900EB54F26F7C95800F1C5DF /* ServiceKeyModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceKeyModule.h; sourceTree = "<group>"; };
+		900EB55026F7CA6800F1C5DF /* ServiceKeyModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceKeyModule.m; sourceTree = "<group>"; };
+		900EB55326F7D63100F1C5DF /* RNCodeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNCodeTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		900EB55426F7D63100F1C5DF /* RNCodeTestTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNCodeTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		900EB55526F7D63200F1C5DF /* ServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceKey.swift; sourceTree = "<group>"; };
+		900EB55826F7D67500F1C5DF /* ServiceKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceKey.m; sourceTree = "<group>"; };
 		A7BA28A5CCF428D9D6D0AE51 /* libPods-RNCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4F1907C6B68A85C91F13ED /* libPods-RNCodeTest-RNCodeTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCodeTest-RNCodeTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F417C35B08575F60099796 /* Pods-RNCodeTest-RNCodeTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTest-RNCodeTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RNCodeTest-RNCodeTestTests/Pods-RNCodeTest-RNCodeTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +103,6 @@
 				D7F417C35B08575F60099796 /* Pods-RNCodeTest-RNCodeTestTests.debug.xcconfig */,
 				8E17671C49F770B86DB7E287 /* Pods-RNCodeTest-RNCodeTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +115,12 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				900EB54F26F7C95800F1C5DF /* ServiceKeyModule.h */,
+				900EB55026F7CA6800F1C5DF /* ServiceKeyModule.m */,
+				900EB55526F7D63200F1C5DF /* ServiceKey.swift */,
+				900EB55326F7D63100F1C5DF /* RNCodeTest-Bridging-Header.h */,
+				900EB55426F7D63100F1C5DF /* RNCodeTestTests-Bridging-Header.h */,
+				900EB55826F7D67500F1C5DF /* ServiceKey.m */,
 			);
 			name = RNCodeTest;
 			sourceTree = "<group>";
@@ -205,10 +222,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1250;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -404,6 +422,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* RNCodeTestTests.m in Sources */,
+				900EB55A26F7D67500F1C5DF /* ServiceKey.m in Sources */,
+				900EB55226F7CA6800F1C5DF /* ServiceKeyModule.m in Sources */,
+				900EB55726F7D63200F1C5DF /* ServiceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900EB55126F7CA6800F1C5DF /* ServiceKeyModule.m in Sources */,
+				900EB55926F7D67500F1C5DF /* ServiceKey.m in Sources */,
+				900EB55626F7D63200F1C5DF /* ServiceKey.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -431,7 +455,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7F417C35B08575F60099796 /* Pods-RNCodeTest-RNCodeTestTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -450,6 +476,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTestTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNCodeTest.app/RNCodeTest";
 			};
 			name = Debug;
@@ -458,7 +487,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E17671C49F770B86DB7E287 /* Pods-RNCodeTest-RNCodeTestTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNCodeTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -474,6 +505,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTestTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNCodeTest.app/RNCodeTest";
 			};
 			name = Release;
@@ -498,6 +531,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNCodeTest;
+				SERVICE_KEY = KbTwtehUWC;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +558,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNCodeTest;
+				SERVICE_KEY = KbTwtehUWC;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
