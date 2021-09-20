@@ -62,7 +62,7 @@ const Thumbnail = ({product}) => {
   }, []);
 
   return (
-    <View style={styles.imgContainer} key={product.title}>
+    <View key={product.title}>
       <Animated.View
         style={{transform: [{scale}], margin: 20, marginBottom: 10}}>
         <TouchableWithoutFeedback
@@ -128,9 +128,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  imgContainer: {
-    //overflow: 'hidden',
-  },
   img: {
     height: undefined,
     width: '100%',
@@ -141,13 +138,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     fontSize: 14,
-    //marginBottom: 2,
   },
   price: {
     fontWeight: 'bold',
     color: 'white',
     fontSize: 14,
-    //marginBottom: 2,
   },
   text: {
     color: 'white',

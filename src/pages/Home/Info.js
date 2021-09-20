@@ -20,11 +20,9 @@ const Info = () => {
               {(item.price.discount || item.price.discountPercent) && (
                 <Text>
                   Discount{' '}
-                  {`${
-                    item.price.discount
-                      ? `- ${item.price.discount}`
-                      : `- ${item.price.discountPercent * 100}%`
-                  }`}
+                  {item.price.discount
+                    ? `- ${item.price.discount}`
+                    : `- ${item.price.discountPercent * 100}%`}
                 </Text>
               )}
             </View>

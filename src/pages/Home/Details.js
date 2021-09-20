@@ -60,10 +60,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  imgContainer: {
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
   img: {
     height: undefined,
     width: '100%',
